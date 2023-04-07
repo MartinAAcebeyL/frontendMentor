@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 100vh;
+    max-width: 100vw;
+    height: 100vh;
+    width: 100vw;
+    background-color: yellow;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+#card {
+    width: 70%;
+    height: 70%;
+    border-radius: 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+#card >:first-child{
+    width: 40%;
+}
+
+#card >:last-child{
+    width: 58%;
+}
+
+#card .images{
+    position: relative;
+}
+
+#card .images img, figure{
+    margin: 0;
+    padding: 0;
+}
+
+#card .images >:nth-child(1){
+    position: absolute;
+    top: 32%;
+    left: -25%;
+    z-index: 1;
+}
+
+#card .images >:nth-child(2) {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+#card .images >:nth-child(2) > img {
+    position: relative;
+    width: 110%;
+    left: -12%;
+    top: 15%;
+}
+
+#card .images >:nth-child(3) {
+    position: relative;
+    top: -100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+#card .images>:nth-child(3) > img{
+    position: absolute;
+    width: 200%;
+    left: -102%;
+    top: -40%;
+}
+
+/* frondentmentor*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
