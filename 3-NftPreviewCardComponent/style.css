@@ -1,19 +1,19 @@
 /* Mobile: 375px - Desktop: 1440px */
-:root{
+:root {
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
-    
+
     --Very-dark-blue1: hsl(217, 54%, 11%);
     --Very-dark-blue2: hsl(216, 50%, 16%);
     --Very-dark-blue3: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-#card{
+#card {
     background: var(--Very-dark-blue2);
     color: var(--White);
 
@@ -33,12 +33,12 @@ body{
     border-radius: 1.8rem;
 }
 
-#card figure{
+#card figure {
     margin: 0;
     position: relative;
 }
 
-#card figure > img:first-child{
+#card figure>img:first-child {
     max-width: 100%;
     width: 100%;
     height: 100%;
@@ -58,19 +58,19 @@ figure .capa {
     opacity: 0;
 }
 
-figure .capa:hover{
+figure .capa:hover {
     opacity: 0.8;
-} 
+}
 
 
-.description > :nth-child(2) {
+.description> :nth-child(2) {
     color: var(--Soft-blue);
     font-size: 1.4rem;
     line-height: 2rem;
     opacity: 0.8;
 }
 
-.description> :last-child{
+.description> :last-child {
     width: 100%;
     display: flex;
     font-size: 1.4rem;
@@ -80,16 +80,16 @@ figure .capa:hover{
     padding: 0 0.5rem;
 }
 
-.description > :last-child > * {
+.description> :last-child>* {
     display: block;
 }
 
-.description> :last-child :last-child{
+.description> :last-child :last-child {
     color: var(--Soft-blue);
-}   
+}
 
 /*  */
-.by{
+.by {
     margin-top: 1rem;
     border-top: 1px solid var(--Soft-blue);
     padding-top: 1.4rem;
@@ -99,7 +99,7 @@ figure .capa:hover{
     font-size: 1.2rem;
 }
 
-.by img{
+.by img {
     width: 3.2rem;
     height: 3.2rem;
     border-radius: 50%;
@@ -108,12 +108,13 @@ figure .capa:hover{
     opacity: 0.8;
 }
 
-.by p span{
+.by p span {
     color: var(--Soft-blue);
 }
+
 /*  */
 
-.chance-font-text:hover{
+.chance-font-text:hover {
     color: var(--Cyan);
     cursor: pointer;
 }
@@ -130,9 +131,10 @@ figure .capa:hover{
 }
 
 @media screen and (max-width: 450px) {
-    html{
+    html {
         font-size: 12px;
     }
+
     #card {
         width: 90%;
     }
