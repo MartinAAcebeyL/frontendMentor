@@ -113,6 +113,77 @@ figure {
     width: 95%;
 }
 
+@media (max-width: 600px) {
+    #card {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        height: 70vh;
+        padding-top: 0;
+    }
+
+
+
+    .fag {
+        padding-left: 0.5rem;
+        flex: 2;
+    }
+
+    .fag h2 {
+        text-align: center;
+    }
+
+    .faqs {
+        width: 95%;
+    }
+
+    .title-arrow img {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    #card .images {
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        width: 100%;
+        height: 20%;
+    }
+
+    #card .images figure img {
+        left: -50%;
+    }
+
+    #card .images> :nth-child(2)>img {
+        width: 100%;
+        left: 0;
+        top: -155px;
+    }
+
+    #card .images> :nth-child(2) {
+        overflow: visible;
+    }
+
+    #card .images> :nth-child(3) {
+        position: relative;
+        top: -140%;
+    }
+
+    #card .images> :nth-child(3)>img {
+        width: 100%;
+        left: 0;
+        top: -155px;
+    }
+
+    .images>:nth-child(1) {
+        display: none;
+    }
+
+    .images>:nth-child(1) img {
+        src: local();
+    }
+}
+
 /* Frontend Mentor attribution */
 .attribution {
     font-size: 11px;
